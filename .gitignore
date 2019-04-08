@@ -1,0 +1,8 @@
+/.idea/
+/.vagrant/
+/node_modules/
+/dist/
+brain-games.iml
+package-lock.json
+ubuntu-xenial-16.04-cloudimg-console.log
+project-lvl1-s474.iml
