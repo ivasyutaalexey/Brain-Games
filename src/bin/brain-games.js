@@ -1,2 +1,4 @@
-#!/usr/bin/env bash
-echo "Welcome to the Brain Games!"
+#!/usr/bin/env node
+import indexFunc from '../index';
+
+indexFunc();
