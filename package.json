@@ -1,11 +1,14 @@
 {
   "name": "ai-brain-games",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Test application",
+  "keywords": [
+    "logic",
+    "games"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
-    "build_windows": "NODE_ENV=production ./node_modules/.bin/babel src --out-dir dist --source-maps inline",
     "prepublishOnly": "npm run build"
   },
   "bin": {
