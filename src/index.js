@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
 
 const getRandomInt = () => Math.floor(Math.random() * (100 - 1)) + 1;
-const isEven = (number) => number % 2 === 0;
+const isEven = number => number % 2 === 0;
 
 const GAMES_COUNT = 3;
 
