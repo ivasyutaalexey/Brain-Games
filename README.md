@@ -9,6 +9,7 @@
 npm install -g ai-brain-games
 ```
 
+[![asciicast](https://asciinema.org/a/HntNcFi7SnFl9LtDorIGwOLGF.svg)](https://asciinema.org/a/HntNcFi7SnFl9LtDorIGwOLGF)
 
 ## Run game
 
@@ -16,4 +17,8 @@ npm install -g ai-brain-games
 brain-games
 ```
 
-[![asciicast](https://asciinema.org/a/B7rnyD3CulX8SrBIkA3GLIp3u.svg)](https://asciinema.org/a/B7rnyD3CulX8SrBIkA3GLIp3u)
+### Brain-calc
+[![asciicast](https://asciinema.org/a/hTJeBCRclZXDu5lJXxoWoDLkT.svg)](https://asciinema.org/a/hTJeBCRclZXDu5lJXxoWoDLkT)
+
+### Brain-even
+[![asciicast](https://asciinema.org/a/cmG0WgTkh5sdIp3IzsHqUidCL.svg)](https://asciinema.org/a/cmG0WgTkh5sdIp3IzsHqUidCL)
