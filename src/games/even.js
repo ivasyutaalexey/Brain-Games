@@ -10,6 +10,6 @@ export default () => {
   game(
     'Answer "yes" if number even otherwise answer "no".',
     getRandomInt,
-    checkAnswer
+    checkAnswer,
   );
 };
