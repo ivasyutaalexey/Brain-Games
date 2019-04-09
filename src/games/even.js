@@ -8,8 +8,8 @@ export default () => {
   const getRandomInt = () => Math.floor(Math.random() * (100 - 1)) + 1;
 
   game(
-    checkAnswer,
-    getRandomInt,
     'Answer "yes" if number even otherwise answer "no".',
+    getRandomInt,
+    checkAnswer
   );
 };
