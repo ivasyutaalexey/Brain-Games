@@ -12,13 +12,19 @@ npm install -g ai-brain-games
 [![asciicast](https://asciinema.org/a/HntNcFi7SnFl9LtDorIGwOLGF.svg)](https://asciinema.org/a/HntNcFi7SnFl9LtDorIGwOLGF)
 
 ## Run game
+### Brain-calc
 
 ```bash
-brain-games
+brain-calc
 ```
 
-### Brain-calc
 [![asciicast](https://asciinema.org/a/hTJeBCRclZXDu5lJXxoWoDLkT.svg)](https://asciinema.org/a/hTJeBCRclZXDu5lJXxoWoDLkT)
 
 ### Brain-even
+
+```bash
+brain-even
+```
+
+
 [![asciicast](https://asciinema.org/a/cmG0WgTkh5sdIp3IzsHqUidCL.svg)](https://asciinema.org/a/cmG0WgTkh5sdIp3IzsHqUidCL)
