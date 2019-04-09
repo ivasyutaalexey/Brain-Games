@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import indexFunc from '../index';
+import indexFunc from '..';
 
 indexFunc();
