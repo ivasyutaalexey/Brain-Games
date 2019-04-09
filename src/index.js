@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
 
-
 const getRandomInt = () => Math.floor(Math.random() * (100 - 1)) + 1;
+const GAMES_COUNT = 3;
 
 export default () => {
   console.log('Welcome to the Brain Games!\nAnswer "yes" if number even otherwise answer "no".\n');
@@ -12,7 +12,7 @@ export default () => {
   let gameCount = 0;
   let rightAnswer = true;
 
-  while (gameCount < 3 && rightAnswer) {
+  while (gameCount < GAMES_COUNT && rightAnswer) {
     const numberForQuestion = getRandomInt();
     const correctAnswer = numberForQuestion % 2 === 0 ? 'yes' : 'no';
 
