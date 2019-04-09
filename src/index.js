@@ -13,10 +13,10 @@ export default () => {
   let rightAnswer = true;
 
   while (gameCount < 3 && rightAnswer) {
-    const digit = getRandomInt();
-    const correctAnswer = digit % 2 === 0 ? 'yes' : 'no';
+    const numberForQuestion = getRandomInt();
+    const correctAnswer = numberForQuestion % 2 === 0 ? 'yes' : 'no';
 
-    console.log(`Question: ${digit}`);
+    console.log(`Question: ${numberForQuestion}`);
     const answer = readlineSync.question('Your answer: ');
 
     if (correctAnswer === answer) {
