@@ -1,6 +1,8 @@
 import readlineSync from 'readline-sync';
 
 const getRandomInt = () => Math.floor(Math.random() * (100 - 1)) + 1;
+const isEven = (number) => number % 2 === 0;
+
 const GAMES_COUNT = 3;
 
 export default () => {
@@ -14,7 +16,7 @@ export default () => {
 
   while (gameCount < GAMES_COUNT && rightAnswer) {
     const numberForQuestion = getRandomInt();
-    const correctAnswer = numberForQuestion % 2 === 0 ? 'yes' : 'no';
+    const correctAnswer = isEven(numberForQuestion) ? 'yes' : 'no';
 
     console.log(`Question: ${numberForQuestion}`);
     const answer = readlineSync.question('Your answer: ');
