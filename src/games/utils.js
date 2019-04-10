@@ -1,3 +1,5 @@
+/* eslint no-plusplus: 0 */
+
 const getRandomInt = (min, max) => Math.floor(Math.random() * (max - min)) + min;
 
 const GAMES_COUNT = 3;
@@ -19,4 +21,4 @@ const generateGamesData = (getQuestion, getCorrectAnswer) => {
   return gameData;
 };
 
-export {getRandomInt, generateGamesData};
+export { getRandomInt, generateGamesData };

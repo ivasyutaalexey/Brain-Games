@@ -1,5 +1,7 @@
+/* eslint no-eval: 0 */
+
 import game from './core';
-import {generateGamesData, getRandomInt} from "./utils";
+import { generateGamesData, getRandomInt } from './utils';
 
 const GAME_RULES = 'What is the result of the expression?';
 const MAX_RANDOM = 100;
