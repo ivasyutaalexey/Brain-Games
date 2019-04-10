@@ -1,7 +1,8 @@
 import game from './core';
 
+const isEven = number => number % 2 === 0;
+
 export default () => {
-  const isEven = number => number % 2 === 0;
 
   const checkAnswer = answer => (isEven(answer) ? 'yes' : 'no');
 
