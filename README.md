@@ -36,3 +36,10 @@ brain-gcd
 ```
 
 [![asciicast](https://asciinema.org/a/fBNsBugkrLv4hWNpJvUmETwao.svg)](https://asciinema.org/a/fBNsBugkrLv4hWNpJvUmETwao)
+
+### Brain-progression
+
+```bash
+brain-progression
+```
+[![asciicast](https://asciinema.org/a/PMrfisDU0iSgP6etiITWTajDw.svg)](https://asciinema.org/a/PMrfisDU0iSgP6etiITWTajDw)
