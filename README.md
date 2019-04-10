@@ -28,3 +28,11 @@ brain-even
 
 
 [![asciicast](https://asciinema.org/a/cmG0WgTkh5sdIp3IzsHqUidCL.svg)](https://asciinema.org/a/cmG0WgTkh5sdIp3IzsHqUidCL)
+
+### Brain-gcd
+
+```bash
+brain-gcd
+```
+
+[![asciicast](https://asciinema.org/a/fBNsBugkrLv4hWNpJvUmETwao.svg)](https://asciinema.org/a/fBNsBugkrLv4hWNpJvUmETwao)
