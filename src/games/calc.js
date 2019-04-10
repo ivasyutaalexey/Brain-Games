@@ -1,48 +1,25 @@
 import game from './core';
+import {generateGamesData, getRandomInt} from "./utils";
 
-const getRandomInt = (min, max) => Math.floor(Math.random() * (max - min)) + min;
-
+const GAME_RULES = 'What is the result of the expression?';
 const MAX_RANDOM = 100;
 
-let a = 0;
-let b = 0;
 let result = '';
-let operation;
 
 const getQuestion = () => {
-  const operations = ['subtraction', 'addition', 'multiplication'];
-  let question;
-
-  operation = operations[getRandomInt(0, operations.length - 1)];
-  a = getRandomInt(1, MAX_RANDOM);
-  b = getRandomInt(1, MAX_RANDOM);
-
-  switch (operation) {
-    case 'multiplication':
-      question = `${a} * ${b}`;
-      result = String(a * b);
-      break;
-    case 'addition':
-      question = `${a} + ${b}`;
-      result = String(a + b);
-      break;
-    case 'subtraction':
-      question = `${a} - ${b}`;
-      result = String(a - b);
-      break;
-    default:
-      break;
-  }
+  const OPERATIONS = ['+', '-', '*'];
+  const operation = OPERATIONS[getRandomInt(0, OPERATIONS.length)];
+  const a = getRandomInt(1, MAX_RANDOM);
+  const b = getRandomInt(1, MAX_RANDOM);
+  const question = `${a} ${operation} ${b}`;
+  result = eval(question);
 
   return question;
 };
 
-const checkAnswer = () => result;
+const getCorrectAnswer = () => result;
 
 export default () => {
-  game(
-    'What is the result of the expression?',
-    getQuestion,
-    checkAnswer,
-  );
+  const gamesData = generateGamesData(getQuestion, getCorrectAnswer);
+  game(GAME_RULES, gamesData);
 };
