@@ -13,7 +13,7 @@ const getQuestion = () => {
   const operations = ['subtraction', 'addition', 'multiplication'];
   let question;
 
-  operation = operations[getRandomInt(0, operations.length)];
+  operation = operations[getRandomInt(0, operations.length - 1)];
   a = getRandomInt(1, MAX_RANDOM);
   b = getRandomInt(1, MAX_RANDOM);
 
