@@ -4,8 +4,8 @@
 import game from './core';
 import { generateGamesData, getRandomInt } from './utils';
 
-const GAME_RULES = 'Find the greatest common divisor of given numbers.';
-const MAX_RANDOM = 100;
+const gameRules = 'Find the greatest common divisor of given numbers.';
+const maxRandom = 100;
 
 let result = '';
 
@@ -29,8 +29,8 @@ const getGCD = (a, b) => {
 };
 
 const getQuestion = () => {
-  const a = getRandomInt(1, MAX_RANDOM);
-  const b = getRandomInt(1, MAX_RANDOM);
+  const a = getRandomInt(1, maxRandom);
+  const b = getRandomInt(1, maxRandom);
 
   result = getGCD(a, b);
 
@@ -41,5 +41,5 @@ const getCorrectAnswer = () => result;
 
 export default () => {
   const gamesData = generateGamesData(getQuestion, getCorrectAnswer);
-  game(GAME_RULES, gamesData);
+  game(gameRules, gamesData);
 };

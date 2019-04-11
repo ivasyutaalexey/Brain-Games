@@ -3,18 +3,18 @@
 import game from './core';
 import { generateGamesData, getRandomInt } from './utils';
 
-const GAME_RULES = 'What number is missing in the progression?';
-const MIN_STEP = 1;
-const MAX_STEP = 10;
-const PROGRESSION_ELEMENTS_COUNT = 10;
+const gameRules = 'What number is missing in the progression?';
+const minStep = 1;
+const maxStep = 10;
+const progressionLength = 10;
 
 let result = '';
 
 const generateProgression = () => {
-  const step = getRandomInt(MIN_STEP, MAX_STEP);
+  const step = getRandomInt(minStep, maxStep);
   const progression = [];
 
-  for (let i = 0; i < PROGRESSION_ELEMENTS_COUNT; i++) {
+  for (let i = 0; i < progressionLength; i++) {
     if (i === 0) {
       progression.push(1);
     } else {
@@ -40,5 +40,5 @@ const getCorrectAnswer = () => result;
 
 export default () => {
   const gamesData = generateGamesData(getQuestion, getCorrectAnswer);
-  game(GAME_RULES, gamesData);
+  game(gameRules, gamesData);
 };
