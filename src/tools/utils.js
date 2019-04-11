@@ -1,13 +1,13 @@
 /* eslint no-plusplus: 0 */
 
-const getRandomInt = (min, max) => Math.floor(Math.random() * (max - min)) + min;
+import {gamesCount} from "./core";
 
-const GAMES_COUNT = 3;
+const getRandomInt = (min, max) => Math.floor(Math.random() * (max - min)) + min;
 
 const generateGamesData = (getQuestion, getCorrectAnswer) => {
   const gameData = [];
 
-  for (let i = 0; i < GAMES_COUNT; i++) {
+  for (let i = 0; i < gamesCount; i++) {
     const map = new Map();
     const question = getQuestion();
     const correctAnswer = getCorrectAnswer(question);

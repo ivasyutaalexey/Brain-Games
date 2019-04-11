@@ -1,7 +1,7 @@
 /* eslint no-plusplus: 0 */
 
 
-import game from '../tools/core';
+import {game} from '../tools/core';
 import { generateGamesData, getRandomInt } from '../tools/utils';
 
 const gameRules = 'Find the greatest common divisor of given numbers.';

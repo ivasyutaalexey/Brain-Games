@@ -1,6 +1,6 @@
 /* eslint no-eval: 0 */
 
-import game from '../tools/core';
+import {game} from '../tools/core';
 import { generateGamesData, getRandomInt } from '../tools/utils';
 
 const gameRules = 'What is the result of the expression?';

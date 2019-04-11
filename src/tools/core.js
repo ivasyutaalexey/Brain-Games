@@ -2,7 +2,9 @@
 
 import readlineSync from 'readline-sync';
 
-export default (rules, gamesData) => {
+const gamesCount = 3;
+
+const game = (rules, gamesData) => {
   console.log('Welcome to the Brain Games!');
   console.log(`${rules}\n`);
 
@@ -29,3 +31,5 @@ export default (rules, gamesData) => {
     }
   }
 };
+
+export {game, gamesCount}
