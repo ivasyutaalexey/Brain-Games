@@ -1,4 +1,4 @@
-import {game} from '../tools/core';
+import { game } from '../tools/core';
 import { getRandomInt, generateGamesData } from '../tools/utils';
 
 const gameRules = 'Answer "yes" if number even otherwise answer "no".';

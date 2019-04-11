@@ -1,6 +1,4 @@
-/* eslint no-plusplus: 0 */
-
-import {game} from '../tools/core';
+import { game } from '../tools/core';
 import { generateGamesData, getRandomInt } from '../tools/utils';
 
 const gameRules = 'What number is missing in the progression?';
@@ -14,7 +12,7 @@ const generateProgression = () => {
   const step = getRandomInt(minStep, maxStep);
   const progression = [];
 
-  for (let i = 0; i < progressionLength; i++) {
+  for (let i = 0; i < progressionLength; i += 1) {
     if (i === 0) {
       progression.push(1);
     } else {

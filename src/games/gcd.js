@@ -1,7 +1,4 @@
-/* eslint no-plusplus: 0 */
-
-
-import {game} from '../tools/core';
+import { game } from '../tools/core';
 import { generateGamesData, getRandomInt } from '../tools/utils';
 
 const gameRules = 'Find the greatest common divisor of given numbers.';
@@ -19,7 +16,7 @@ const getGCD = (a, b) => {
   const maximum = getMaximumNumber(a, b);
   let divisor = 1;
 
-  for (let i = 2; i < maximum; i++) {
+  for (let i = 2; i < maximum; i += 1) {
     if (a % i === 0 && b % i === 0) {
       divisor = i;
     }

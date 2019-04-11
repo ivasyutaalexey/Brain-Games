@@ -1,5 +1,3 @@
-/* eslint no-plusplus: 0 */
-
 import readlineSync from 'readline-sync';
 
 const gamesCount = 3;
@@ -11,11 +9,11 @@ const game = (rules, gamesData) => {
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!\n`);
 
-  for (let i = 0; i < gamesData.length; i++) {
-    const game = gamesData[i];
-    const correctAnswer = game.get('answer');
+  for (let i = 0; i < gamesData.length; i += 1) {
+    const gameData = gamesData[i];
+    const correctAnswer = gameData.get('answer');
 
-    console.log(`Question: ${game.get('question')}`);
+    console.log(`Question: ${gameData.get('question')}`);
     const answer = readlineSync.question('Your answer: ');
 
     if (String(correctAnswer) === answer) {
@@ -32,4 +30,4 @@ const game = (rules, gamesData) => {
   }
 };
 
-export {game, gamesCount}
+export { game, gamesCount };
