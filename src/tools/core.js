@@ -29,4 +29,4 @@ const game = (rules, gameDataFunc) => {
   console.log(`Congratulations, ${name}!`);
 };
 
-export { game };
+export default game;
