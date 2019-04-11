@@ -1,5 +1,5 @@
 import { game } from '../tools/core';
-import { generateGamesData, getRandomInt } from '../tools/utils';
+import { getRandomInt } from '../tools/utils';
 
 const gameRules = 'Find the greatest common divisor of given numbers.';
 const maxRandom = 100;
@@ -37,6 +37,6 @@ const getQuestion = () => {
 const getCorrectAnswer = () => result;
 
 export default () => {
-  const gamesData = generateGamesData(getQuestion, getCorrectAnswer);
-  game(gameRules, gamesData);
+  // const gamesData = generateGamesData(getQuestion, getCorrectAnswer);
+  // game(gameRules, gamesData);
 };
