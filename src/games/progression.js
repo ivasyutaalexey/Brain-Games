@@ -1,7 +1,7 @@
 /* eslint no-plusplus: 0 */
 
-import game from './core';
-import { generateGamesData, getRandomInt } from './utils';
+import game from '../tools/core';
+import { generateGamesData, getRandomInt } from '../tools/utils';
 
 const gameRules = 'What number is missing in the progression?';
 const minStep = 1;

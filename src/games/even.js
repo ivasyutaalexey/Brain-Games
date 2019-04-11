@@ -1,5 +1,5 @@
-import game from './core';
-import { getRandomInt, generateGamesData } from './utils';
+import game from '../tools/core';
+import { getRandomInt, generateGamesData } from '../tools/utils';
 
 const gameRules = 'Answer "yes" if number even otherwise answer "no".';
 const maxRandom = 100;
