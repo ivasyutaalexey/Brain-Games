@@ -10,7 +10,7 @@ let result = '';
 
 const getQuestion = () => {
   const operations = ['+', '-', '*'];
-  const operation = operations[getRandomInt(0, operations.length)];
+  const operation = operations[getRandomInt(0, operations.length - 1)];
   const a = getRandomInt(1, maxRandom);
   const b = getRandomInt(1, maxRandom);
   const question = `${a} ${operation} ${b}`;

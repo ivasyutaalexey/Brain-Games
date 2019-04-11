@@ -26,7 +26,7 @@ const generateProgression = () => {
 
 const getQuestion = () => {
   const progression = generateProgression();
-  const position = getRandomInt(0, progression.length);
+  const position = getRandomInt(0, progression.length - 1);
 
   result = progression[position];
   progression[position] = '..';

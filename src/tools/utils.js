@@ -1,6 +1,6 @@
 import { gamesCount } from './core';
 
-const getRandomInt = (min, max) => Math.floor(Math.random() * (max - min)) + min;
+const getRandomInt = (min, max) => Math.floor(Math.random() * ((max + 1) - min)) + min;
 
 const generateGamesData = (getQuestion, getCorrectAnswer) => {
   const gameData = [];
