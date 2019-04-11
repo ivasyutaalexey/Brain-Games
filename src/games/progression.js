@@ -6,8 +6,6 @@ const minStep = 1;
 const maxStep = 10;
 const progressionLength = 10;
 
-let result = '';
-
 const generateProgression = () => {
   const step = getRandomInt(minStep, maxStep);
   const progression = [];
@@ -24,19 +22,15 @@ const generateProgression = () => {
   return progression;
 };
 
-const getQuestion = () => {
+const gamesData = () => {
   const progression = generateProgression();
   const position = getRandomInt(0, progression.length - 1);
 
-  result = progression[position];
+  const answer = progression[position];
   progression[position] = '..';
+  const question = progression.join(' ');
 
-  return progression.join(' ');
+  return [question, answer];
 };
 
-const getCorrectAnswer = () => result;
-
-export default () => {
-  // const gamesData = generateGamesData(getQuestion, getCorrectAnswer);
-  // game(gameRules, gamesData);
-};
+export default () => game(gameRules, gamesData);

@@ -5,34 +5,21 @@ const gameRules = 'What is the result of the expression?';
 const maxRandom = 100;
 
 const gameData = () => {
-	const map = new Map();
-	const operations = ['+', '-', '*'];
+	const operations = [
+		['+', (x, y) => x + y],
+    ['-', (x, y) => x - y],
+    ['*', (x, y) => x * y],
+	];
 
-	let functions = {
-		'+': function (x, y) {
-			return x + y
-		},
-		'-': function (x, y) {
-			return x - y
-		},
-		'*': function (x, y) {
-			return x * y
-		},
-	};
-
-	const operation = operations[getRandomInt(0, operations.length - 1)];
+	const index = getRandomInt(0, operations.length - 1);
+	const operation = operations[index];
 	const a = getRandomInt(1, maxRandom);
 	const b = getRandomInt(1, maxRandom);
 
-	const question = `${a} ${operation} ${b}`;
-	const answer = functions[operation](a, b);
+	const question = `${a} ${operation[0]} ${b}`;
+	const answer = operation[1](a, b);
 
-	map.set('question', question);
-	map.set('answer', answer);
-
-	return map;
+	return [question, answer];
 };
 
-export default () => {
-	game(gameRules, gameData);
-};
+export default () => game(gameRules, gameData);
