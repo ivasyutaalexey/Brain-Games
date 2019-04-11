@@ -18,15 +18,13 @@ const game = (rules, gamesData) => {
 
     if (String(correctAnswer) === answer) {
       console.log('Correct!');
-
-      if (i === gamesData.length - 1) {
-        console.log(`Congratulations, ${name}!`);
-      }
     } else {
       console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'`);
       console.log(`Let's try again, ${name}!`);
-      break;
+      return;
     }
+
+    console.log(`Congratulations, ${name}!`);
   }
 };
 
