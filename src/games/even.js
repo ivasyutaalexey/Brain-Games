@@ -1,16 +1,16 @@
-import game from '../tools/core';
-import { getRandomInt } from '../tools/utils';
+import game from '../core';
+import { getRandomInt } from '../utils';
 
-const gameRules = 'Answer "yes" if number even otherwise answer "no".';
+const gameDescription = 'Answer "yes" if number even otherwise answer "no".';
 const maxRandom = 100;
 
 const isEven = number => number % 2 === 0;
 
-const gamesData = () => {
+const getGameData = () => {
   const question = getRandomInt(1, maxRandom);
   const answer = isEven(question) ? 'yes' : 'no';
 
   return [question, answer];
 };
 
-export default () => game(gameRules, gamesData);
+export default () => game(gameDescription, getGameData);

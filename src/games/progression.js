@@ -1,7 +1,7 @@
-import game from '../tools/core';
-import { getRandomInt } from '../tools/utils';
+import game from '../core';
+import { getRandomInt } from '../utils';
 
-const gameRules = 'What number is missing in the progression?';
+const gameDescription = 'What number is missing in the progression?';
 const minStep = 1;
 const maxStep = 10;
 const progressionLength = 10;
@@ -22,15 +22,15 @@ const generateProgression = () => {
   return progression;
 };
 
-const gamesData = () => {
+const getGameData = () => {
   const progression = generateProgression();
-  const position = getRandomInt(0, progression.length - 1);
+  const positionOfHiddenElement = getRandomInt(0, progression.length - 1);
 
-  const answer = progression[position];
-  progression[position] = '..';
+  const answer = progression[positionOfHiddenElement];
+  progression[positionOfHiddenElement] = '..';
   const question = progression.join(' ');
 
   return [question, answer];
 };
 
-export default () => game(gameRules, gamesData);
+export default () => game(gameDescription, getGameData);
