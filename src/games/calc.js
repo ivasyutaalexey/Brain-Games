@@ -1,13 +1,13 @@
 import game from '../core';
-import { getRandomInt } from '../utils';
+import getRandomInt from '../utils';
 
 const gameDescription = 'What is the result of the expression?';
 const maxRandom = 100;
 
 const operations = [
-	['+', (x, y) => x + y],
-	['-', (x, y) => x - y],
-	['*', (x, y) => x * y],
+  ['+', (x, y) => x + y],
+  ['-', (x, y) => x - y],
+  ['*', (x, y) => x * y],
 ];
 
 const getGameData = () => {

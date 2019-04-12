@@ -1,5 +1,5 @@
 import game from '../core';
-import { getRandomInt } from '../utils';
+import getRandomInt from '../utils';
 
 const gameDescription = 'What number is missing in the progression?';
 const minStep = 1;

@@ -1,5 +1,5 @@
 import game from '../core';
-import { getRandomInt } from '../utils';
+import getRandomInt from '../utils';
 
 const gameDescription = 'Answer "yes" if number even otherwise answer "no".';
 const maxRandom = 100;
