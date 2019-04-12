@@ -1,4 +1,4 @@
-import game from '../core';
+import playGame from '../core';
 import getRandomInt from '../utils';
 
 const gameDescription = 'What is the result of the expression?';
@@ -20,7 +20,7 @@ const getGameData = () => {
   const question = `${a} ${operationLiteral} ${b}`;
   const answer = operationFunc(a, b);
 
-  return [question, answer];
+  return [question, String(answer)];
 };
 
-export default () => game(gameDescription, getGameData);
+export default () => playGame(gameDescription, getGameData);

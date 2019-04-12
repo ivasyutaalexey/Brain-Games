@@ -10,7 +10,7 @@ npm install -g ai-brain-games
 
 [![asciicast](https://asciinema.org/a/HntNcFi7SnFl9LtDorIGwOLGF.svg)](https://asciinema.org/a/HntNcFi7SnFl9LtDorIGwOLGF)
 
-## Run game
+## Run playGame
 ### Brain-calc
 
 ```bash

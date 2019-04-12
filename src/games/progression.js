@@ -1,4 +1,4 @@
-import game from '../core';
+import playGame from '../core';
 import getRandomInt from '../utils';
 
 const gameDescription = 'What number is missing in the progression?';
@@ -7,16 +7,13 @@ const maxStep = 10;
 const progressionLength = 10;
 
 const generateProgression = () => {
-  const step = getRandomInt(minStep, maxStep);
   const progression = [];
+  const progressionStep = getRandomInt(minStep, maxStep);
+  const firstElement = 1;
 
   for (let i = 0; i < progressionLength; i += 1) {
-    if (i === 0) {
-      progression.push(1);
-    } else {
-      const nextElement = progression[progression.length - 1] + step;
-      progression.push(nextElement);
-    }
+    const nextElement = firstElement + progressionStep * i;
+    progression.push(nextElement);
   }
 
   return progression;
@@ -24,13 +21,13 @@ const generateProgression = () => {
 
 const getGameData = () => {
   const progression = generateProgression();
-  const positionOfHiddenElement = getRandomInt(0, progression.length - 1);
+  const positionOfHiddenElement = getRandomInt(0, progressionLength - 1);
 
   const answer = progression[positionOfHiddenElement];
   progression[positionOfHiddenElement] = '..';
   const question = progression.join(' ');
 
-  return [question, answer];
+  return [question, String(answer)];
 };
 
-export default () => game(gameDescription, getGameData);
+export default () => playGame(gameDescription, getGameData);

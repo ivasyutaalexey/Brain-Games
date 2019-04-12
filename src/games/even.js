@@ -1,4 +1,4 @@
-import game from '../core';
+import playGame from '../core';
 import getRandomInt from '../utils';
 
 const gameDescription = 'Answer "yes" if number even otherwise answer "no".';
@@ -13,4 +13,4 @@ const getGameData = () => {
   return [question, answer];
 };
 
-export default () => game(gameDescription, getGameData);
+export default () => playGame(gameDescription, getGameData);

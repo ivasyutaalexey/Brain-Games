@@ -1,24 +1,18 @@
-import game from '../core';
+import playGame from '../core';
 import getRandomInt from '../utils';
 
 const gameDescription = 'Answer "yes" if given number is prime. Otherwise answer "no"';
 const maxRandom = 100;
 
-const getDivisors = (number) => {
-  const divisors = [];
-
+const isPrime = (number) => {
+  let divisorsCount = 0;
   for (let i = 1; i <= number; i += 1) {
     if (number % i === 0) {
-      divisors.push(i);
+      divisorsCount += 1;
     }
   }
 
-  return divisors;
-};
-
-const isPrime = (number) => {
-  const divisors = getDivisors(number);
-  return divisors.length === 2 && divisors[0] === 1 && divisors[1] === number;
+  return divisorsCount === 2;
 };
 
 const getGameData = () => {
@@ -28,4 +22,4 @@ const getGameData = () => {
   return [question, answer];
 };
 
-export default () => game(gameDescription, getGameData);
+export default () => playGame(gameDescription, getGameData);
